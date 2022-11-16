@@ -419,7 +419,6 @@ form input{
 
     .ready{
         width: 100%;
-        max-width: inherit;
     }
 
     .wave__bottom{
@@ -522,6 +521,7 @@ form input{
 
     .ready{
         width: 100%;
+        max-width: inherit;
     }
 
     .footer__left{
