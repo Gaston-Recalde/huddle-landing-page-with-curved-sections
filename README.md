@@ -15,11 +15,11 @@ This is a solution to the [Huddle landing page with curved sections challenge on
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/huddle-landing-page-curved.png)
 
 ### Links
 
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://graceful-medovik-0b4aac.netlify.app)
 
 ## My process
 

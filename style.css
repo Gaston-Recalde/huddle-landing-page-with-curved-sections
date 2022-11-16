@@ -520,6 +520,10 @@ form input{
         font-weight: 600;
     }
 
+    .ready{
+        width: 100%;
+    }
+
     .footer__left{
         width: 50%;
     }
