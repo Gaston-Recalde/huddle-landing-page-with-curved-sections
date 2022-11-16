@@ -120,6 +120,67 @@ body{
     margin: 0 auto;
 }
 
+/* MAIN */
+.container{
+    position: relative;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    max-width: 1440px;
+    padding: 50px 35px 35px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    background-color: #fff;
+    /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19); */
+}
+
+._img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+._h2{
+    color:hsl(192, 100%, 9%);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+._p{
+    color: hsl(208, 11%, 55%);
+    text-align: center;
+    font-size: 14px;
+}
+
+.ready{
+    position: absolute;
+    bottom: -275px;
+    width: 90%;
+    padding: 50px 15px 0;
+}
+
+.ready__h2{
+    font-size: 18px;
+}
+
+.ready__button{
+    font-size: 11px;
+}
+
+.ready__button:hover{
+    background-color: rgb(255, 82, 191,75%);
+}
+
 
 
 
@@ -139,6 +200,58 @@ body{
     .data__container{
         flex-direction: row;
         justify-content: center;
+    }
+
+    /* MAIN */
+    .container{
+        margin-bottom: 250px;
+    }
+    
+    .card{
+        flex-direction: row-reverse;
+        width: 95%;
+    }
+
+    .conversation{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 12%;
+    }
+    
+    ._img{
+        width: 40%;
+    }
+    
+    .card__info{
+        width: 41%;
+        margin: 0 auto;
+        margin-left: 0;
+    }
+    
+    .conversation__info{
+        margin: 0;
+    }
+    ._h2{
+        font-size: 28px;
+        text-align: start;
+    }
+
+    ._p{
+        text-align: start;
+        font-size: 17px;
+    }
+    
+    .ready{
+        position: absolute;
+        bottom: -390px;
+        width: 55%;
+        padding: 50px 15px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .ready__h2{
+        font-size: 24px;
+        text-align: center;
     }
 
 }
@@ -220,6 +333,32 @@ body{
 
     .data__p{
         font-size: 24px;
+    }
+
+    .card{
+        width: 85%;
+        max-width: 1440px;
+    }
+
+    .card__info{
+        width: 44%;
+    }
+
+    .conversation{
+        gap: 11%;
+    }
+
+    ._img{
+        width: 45%;
+    }
+
+    ._h2{
+        font-size: 42px;
+    }
+
+    ._p{
+        font-size: 15px;
+        font-weight: 600;
     }
 }
 
