@@ -86,6 +86,7 @@ body{
 }
 
 .info__button:hover{
+    cursor: pointer;
     background-color: var(--light-pink);
 }
 
@@ -121,7 +122,6 @@ body{
 /* MAIN */
 .container{
     position: relative;
-    margin-bottom: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,14 +160,30 @@ body{
 }
 
 .ready{
-    position: absolute;
-    bottom: -275px;
-    width: 90%;
+    width: 100%;
     padding: 50px 15px 0;
+
+    position: relative;
+    padding-bottom: 210px;
+    margin-bottom: 0;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+}
+
+.wave__bottom{
+    left: 0;
+    bottom: 0;
+    background-image: url('./images/bg-footer-top-mobile.svg');
 }
 
 .ready__h2{
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .ready__button{
@@ -175,10 +191,12 @@ body{
 }
 
 .ready__button:hover{
+    cursor: pointer;
     background-color: rgb(255, 82, 191,75%);
 }
 
 footer{
+    position: relative;
     background-color: var(--very-dark-cyan);
 
     padding-top: 125px;
@@ -235,6 +253,7 @@ form input{
 }
 
 .footer__button:hover{
+    cursor: pointer;
     background-color: var(--light-pink);
 }
 
@@ -272,6 +291,7 @@ form input{
 }
 
 .footer__social i:hover{
+    cursor: pointer;
     background-color: hsl(192, 56%, 52%);
     color: var(--very-dark-cyan);
 }
@@ -295,9 +315,6 @@ form input{
     }
 
     /* MAIN */
-    .container{
-        margin-bottom: 250px;
-    }
     
     .card{
         flex-direction: row-reverse;
@@ -334,12 +351,9 @@ form input{
     }
     
     .ready{
-        position: absolute;
-        bottom: -390px;
-        width: 55%;
-        padding: 50px 15px 0;
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     .ready__h2{
         font-size: 24px;
@@ -401,6 +415,15 @@ form input{
         justify-content: space-evenly;
         width: 700px;
         margin: 0 auto;
+    }
+
+    .ready{
+        width: 100%;
+        max-width: inherit;
+    }
+
+    .wave__bottom{
+        background-image: url('./images/bg-footer-top-desktop.svg');
     }
 
     .footer__container{
@@ -523,7 +546,6 @@ form input{
     .footer__right{
         width: 350px;
     }
-
 
 }
 
